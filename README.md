@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/RadasinR/testimonials-grid-section.git)
-- Live Site URL: [Add live site URL here](https://testimonials-grid-section-one-rho.vercel.app/)
+- Solution URL: [Add solution URL here](https://github.com/RadasinR/testimonials-grid.git)
+- Live Site URL: [Add live site URL here](https://testimonials-grid-ashy.vercel.app/)
 
 ## My process
 
