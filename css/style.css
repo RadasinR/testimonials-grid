@@ -1,0 +1,190 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+
+### Neutral
+
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%)
+
+Note for text colors:
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+
+## Typography
+
+### Body Copy
+
+- Font size: 13px
+
+### Font
+
+- Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
+- Weights: 500, 600 */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CUSTOME PROPERITES */
+
+:root {
+    /* COLORS */
+
+    /* primary */
+
+    --MODERATE-VIOLET: hsl(263, 55%, 52%);
+    --MODERATE-VIOLET-ACCENT: hsl(263, 58%, 64%);
+    --VERY-DARK-GRAYISH-BLUE: hsl(217, 19%, 35%);
+    --VERY-DARK-BLACKISH-BLUE: hsl(219, 29%, 14%);
+    --WHITE: hsl(0, 0%, 100%);
+
+    /* neutrals */
+
+    --LIGHT-GRAY: hsl(0, 0%, 81%);
+    --LIGHT-GRAYISH-BLUE: hsl(210, 46%, 95%);
+    --GRAY-FOR-BGWHITE:  hsl(0, 0%, 50%);
+    /* TYPOGRAPHY */
+    --FS: 0.85rem;
+    --FF: 'Barlow Semi Condensed', sans-serif;
+    --REGULAR: 500;
+    --BOLD: 600;
+
+}
+
+
+/* GENERAL STYLE */
+
+body {
+    font-family: var(--FF);
+    font-size: var(--FS);
+    font-weight: var(--REGULAR);
+    color: var(--LIGHT-GRAY);
+    background-color: var(--LIGHT-GRAYISH-BLUE);
+}
+
+/* utils */
+
+.accent {
+    border: 3px solid var(--MODERATE-VIOLET-ACCENT);
+}
+
+.bg-purple {
+    background-color: var(--MODERATE-VIOLET);
+    background-image: url("/images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 10%;
+
+}
+
+.bg-light-black {
+    background-color: var(--VERY-DARK-GRAYISH-BLUE);
+
+}
+
+.bg-dark-black {
+    background-color: var(--VERY-DARK-BLACKISH-BLUE);
+
+}
+
+.bg-white {
+    background-color: var(--WHITE);
+    color: var(--GRAY-FOR-BGWHITE);
+}
+
+/* Layout */
+
+.grid {
+    display: grid;
+    gap: 1.4rem;
+    padding: 2rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 10% 10%;
+    }
+
+    .testimonial:first-child {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .testimonial:nth-child(4) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    .testimonial:nth-child(5) {
+        grid-column: 4;
+        grid-row: 1 / 3;
+    }
+}
+
+/* STYLES */
+
+.testimonial {
+    display: grid;
+    gap: 1rem;
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+}
+
+.user img {
+    border-radius: 50%;
+}
+
+.user {
+    display: flex;
+    gap: 1rem;
+}
+
+.user div {
+    align-self: center;
+}
+
+.user__name {
+    font-size: 1rem;
+    color: var(--WHITE);
+    font-weight: var(--REGULAR);
+}
+
+.bg-white .user__name {
+    color: var(--VERY-DARK-BLACKISH-BLUE);
+}
+
+.testimonial__title {
+    color: var(--WHITE);
+    font-weight: var(--BOLD);
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+.bg-white .testimonial__title {
+    color: var(--VERY-DARK-BLACKISH-BLUE);
+}
+
+.testimonial__text {
+    line-height: 1.4;
+}
