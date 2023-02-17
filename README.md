@@ -107,5 +107,5 @@ grid {
 ## Author
 
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Radasin)
+- Frontend Mentor - [@Igor](https://www.frontendmentor.io/profile/Radasin)
 
