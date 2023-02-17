@@ -28,13 +28,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![page](screenshot.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/RadasinR/testimonials-grid.git)
-- Live Site URL: [Add live site URL here](https://testimonials-grid-ashy.vercel.app/)
+ [GITHUB](https://github.com/RadasinR/testimonials-grid.git)
+ [LIVE SITE](https://testimonials-grid-ashy.vercel.app/)
 
 ## My process
 
