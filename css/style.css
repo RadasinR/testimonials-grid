@@ -124,7 +124,7 @@ body {
 @media screen and (min-width: 1440px) {
     .grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        padding: 10% 10%;
+        padding: 12% 12%;
     }
 
     .testimonial:first-child {
